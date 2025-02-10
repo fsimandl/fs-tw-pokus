@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    background: linear-gradient(135deg, #1e90ff, #ffa500);
+}
+
+.animal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.animal img {
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (orientation: landscape) {
+    .animal {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    .animal {
+        flex-direction: column;
+    }
+}
